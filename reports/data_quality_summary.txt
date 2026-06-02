@@ -1,0 +1,13 @@
+DATA QUALITY SUMMARY
+
+01_fund_master.csv | Shape=(40, 15) | Missing=0 | Duplicates=0
+02_nav_history.csv | Shape=(46000, 3) | Missing=0 | Duplicates=0
+03_aum_by_fund_house.csv | Shape=(90, 5) | Missing=0 | Duplicates=0
+04_monthly_sip_inflows.csv | Shape=(48, 6) | Missing=12 | Duplicates=0
+05_category_inflows.csv | Shape=(144, 3) | Missing=0 | Duplicates=0
+06_industry_folio_count.csv | Shape=(21, 6) | Missing=0 | Duplicates=0
+07_scheme_performance.csv | Shape=(40, 19) | Missing=0 | Duplicates=0
+08_investor_transactions.csv | Shape=(32778, 13) | Missing=0 | Duplicates=0
+09_portfolio_holdings.csv | Shape=(322, 8) | Missing=0 | Duplicates=0
+10_benchmark_indices.csv | Shape=(8050, 3) | Missing=0 | Duplicates=0
+live_nav.csv | Shape=(6, 4) | Missing=0 | Duplicates=0
