@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv("../data/processed/07_scheme_performance_cleaned.csv")
 
-def recommend_funds(risk_grade="Low", top_n=5):
+def recommend_funds(risk_grade="Low", top_n=3):
 
     filtered = df[
         df["risk_grade"].str.lower() ==
@@ -12,20 +12,20 @@ def recommend_funds(risk_grade="Low", top_n=5):
     recommendations = (
         filtered
         .sort_values(
-            by="return_1yr_pct",
+            by="sharpe_ratio"
             ascending=False
         )
         .head(top_n)
     )
 
     return recommendations[
-        [
-            "amfi_code",
-            "scheme_name",
-            "return_1yr_pct",
-            "risk_grade"
-        ]
+    [
+        "amfi_code",
+        "scheme_name",
+        "sharpe_ratio",
+        "risk_grade"
     ]
+]
 
 if __name__ == "__main__":
 
